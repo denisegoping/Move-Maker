@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qeM-TT-zsX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="xZG-np-RpJ">
+            <objects>
+                <viewController id="qeM-TT-zsX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="04a-Il-yr8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundColour" translatesAutoresizingMaskIntoConstraints="NO" id="qof-Bw-h4p">
+                                <rect key="frame" x="-75" y="-53.5" width="564" height="1003"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Move Maker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2W4-lK-e3v">
+                                <rect key="frame" x="52" y="194" width="310" height="136.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="310" id="dMq-R6-1g4"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="310" id="dbh-W1-da2"/>
+                                    <constraint firstAttribute="height" constant="136.5" id="o0u-LD-DJV"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="155" id="qbb-uR-XqF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="35"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="1" green="0.99157592910000003" blue="0.61651666549999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="-4" height="-1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="A library of dance moves that beginners or experts can try. Upload your own videos and get inspired!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16C-Sq-rXf">
+                                <rect key="frame" x="74" y="406.5" width="266" height="83"/>
+                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xxj-wL-hPs">
+                                <rect key="frame" x="130" y="619" width="154" height="84.5"/>
+                                <color key="backgroundColor" red="0.98653171930000005" green="1" blue="0.76253983560000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84.5" id="PCh-4P-7Z2"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="154" id="TgV-31-vIb"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="84.5" id="UHJ-30-UeC"/>
+                                    <constraint firstAttribute="width" constant="154" id="dwX-Gh-NqP"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="154" id="gfe-gd-MYi"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="84.5" id="uVd-nU-PSU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Charter-Italic" family="Charter" pointSize="26"/>
+                                <state key="normal" title="Get Started">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="wWR-IU-6Im" kind="show" id="hWe-uJ-Xws"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TFO-Nk-YJJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xxj-wL-hPs" firstAttribute="centerX" secondItem="04a-Il-yr8" secondAttribute="centerX" id="0zx-mX-HeI"/>
+                            <constraint firstItem="qof-Bw-h4p" firstAttribute="centerX" secondItem="04a-Il-yr8" secondAttribute="centerX" id="4PU-JW-OQq"/>
+                            <constraint firstItem="TFO-Nk-YJJ" firstAttribute="bottom" secondItem="Xxj-wL-hPs" secondAttribute="bottom" constant="158.5" id="9Cu-wV-deh"/>
+                            <constraint firstItem="16C-Sq-rXf" firstAttribute="leading" secondItem="TFO-Nk-YJJ" secondAttribute="leading" constant="74" id="BVR-Td-IJx"/>
+                            <constraint firstItem="16C-Sq-rXf" firstAttribute="centerY" secondItem="04a-Il-yr8" secondAttribute="centerY" id="Ezs-RY-Ty3"/>
+                            <constraint firstItem="TFO-Nk-YJJ" firstAttribute="trailing" secondItem="16C-Sq-rXf" secondAttribute="trailing" constant="74" id="Jtr-Zc-61a"/>
+                            <constraint firstItem="2W4-lK-e3v" firstAttribute="centerX" secondItem="04a-Il-yr8" secondAttribute="centerX" id="P7v-CR-f8j"/>
+                            <constraint firstItem="qof-Bw-h4p" firstAttribute="centerY" secondItem="04a-Il-yr8" secondAttribute="centerY" id="Vnt-tW-izr"/>
+                            <constraint firstItem="2W4-lK-e3v" firstAttribute="top" secondItem="TFO-Nk-YJJ" secondAttribute="top" constant="150" id="buJ-hn-bKD"/>
+                            <constraint firstItem="16C-Sq-rXf" firstAttribute="centerX" secondItem="04a-Il-yr8" secondAttribute="centerX" id="ck0-5h-JJg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hlw-vG-KIL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-33.333333333333336" y="104.46428571428571"/>
+        </scene>
+        <!--CollectionViewController-->
+        <scene sceneID="PGE-jK-eT7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Video" referencedIdentifier="CollectionViewController" id="wWR-IU-6Im" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ock-Xj-Jxl"/>
+                    <size key="freeformSize" width="414" height="896"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="38b-Z4-fJS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="579" y="65"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backgroundColour" width="564" height="1003"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

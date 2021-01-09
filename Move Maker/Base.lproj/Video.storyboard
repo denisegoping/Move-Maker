@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="68B-Ig-XNj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Collection View Controller-->
+        <scene sceneID="XSF-Zy-9rT">
+            <objects>
+                <collectionViewController restorationIdentifier="CollectionViewController" storyboardIdentifier="CollectionViewController" id="68B-Ig-XNj" customClass="CollectionViewController" customModule="Scroll" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="mkj-8J-ikE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="50" minimumInteritemSpacing="10" id="IHQ-Zm-MRj">
+                            <size key="itemSize" width="164" height="168"/>
+                            <size key="headerReferenceSize" width="0.0" height="15"/>
+                            <size key="footerReferenceSize" width="0.0" height="10"/>
+                            <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <imageView key="backgroundView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundColour" id="CYW-BZ-ULX">
+                            <rect key="frame" x="0.0" y="-44" width="414" height="896"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="4V6-IZ-Cyj" userLabel="Cell" customClass="CollectionViewCell" customModule="Scroll" customModuleProvider="target">
+                                <rect key="frame" x="10" y="15" width="164" height="168"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="uxg-EN-LtD">
+                                    <rect key="frame" x="0.0" y="0.0" width="164" height="168"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TGq-ai-xpb">
+                                            <rect key="frame" x="0.0" y="0.0" width="164" height="168"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="164" id="0Vm-Im-yzv"/>
+                                                <constraint firstAttribute="height" constant="168" id="81f-qs-T7M"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VideoNameLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J25-za-lao">
+                                            <rect key="frame" x="18" y="123" width="128" height="37"/>
+                                            <color key="backgroundColor" red="0.98653171927107097" green="1" blue="0.76253983563488625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="Charter-Italic" family="Charter" pointSize="20"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="J25-za-lao" firstAttribute="centerX" secondItem="uxg-EN-LtD" secondAttribute="centerX" id="2eN-kg-Fge"/>
+                                        <constraint firstItem="TGq-ai-xpb" firstAttribute="centerY" secondItem="uxg-EN-LtD" secondAttribute="centerY" id="AcE-in-qqj"/>
+                                        <constraint firstItem="J25-za-lao" firstAttribute="centerX" secondItem="uxg-EN-LtD" secondAttribute="centerX" id="E3b-8e-wjt"/>
+                                        <constraint firstItem="TGq-ai-xpb" firstAttribute="centerY" secondItem="uxg-EN-LtD" secondAttribute="centerY" id="LFG-vY-WBL"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="J25-za-lao" secondAttribute="trailing" constant="18" id="Opq-sc-aEF"/>
+                                        <constraint firstItem="TGq-ai-xpb" firstAttribute="centerX" secondItem="uxg-EN-LtD" secondAttribute="centerX" id="Rfd-LQ-cs4"/>
+                                        <constraint firstItem="TGq-ai-xpb" firstAttribute="centerY" secondItem="uxg-EN-LtD" secondAttribute="centerY" id="T6d-Sv-rPj"/>
+                                        <constraint firstAttribute="bottom" secondItem="TGq-ai-xpb" secondAttribute="bottom" id="XSu-jm-XKk"/>
+                                        <constraint firstItem="TGq-ai-xpb" firstAttribute="centerY" secondItem="uxg-EN-LtD" secondAttribute="centerY" id="c1Q-W4-ioV"/>
+                                        <constraint firstItem="TGq-ai-xpb" firstAttribute="top" secondItem="uxg-EN-LtD" secondAttribute="top" id="eWW-91-7pD"/>
+                                        <constraint firstAttribute="bottom" secondItem="J25-za-lao" secondAttribute="bottom" constant="8" id="sSv-WU-hlm"/>
+                                        <constraint firstItem="J25-za-lao" firstAttribute="top" secondItem="uxg-EN-LtD" secondAttribute="top" constant="123" id="tBW-3a-W3b"/>
+                                        <constraint firstItem="TGq-ai-xpb" firstAttribute="top" secondItem="uxg-EN-LtD" secondAttribute="top" id="vE6-l4-PeX"/>
+                                        <constraint firstItem="TGq-ai-xpb" firstAttribute="width" secondItem="uxg-EN-LtD" secondAttribute="width" id="zte-KK-x3D"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="164" height="168"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="backgroundImage" destination="TGq-ai-xpb" id="BLF-3c-J5z"/>
+                                    <outlet property="videoLabel" destination="J25-za-lao" id="bHg-ng-rxf"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bTA-1c-2NF">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="15"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </collectionReusableView>
+                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="0Z0-8X-2aC">
+                            <rect key="frame" x="0.0" y="183" width="414" height="10"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="68B-Ig-XNj" id="E2E-Eo-HmZ"/>
+                            <outlet property="delegate" destination="68B-Ig-XNj" id="nGF-42-5MP"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2xD-9Y-OF7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-181.15942028985509" y="-17.410714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backgroundColour" width="564" height="1003"/>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
