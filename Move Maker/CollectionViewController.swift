@@ -1,6 +1,6 @@
 //
 //  CollectionViewController.swift
-//  Scroll
+//  Move Maker
 //
 //  Created by Denise Goping on 2021-01-05.
 //
@@ -23,37 +23,24 @@ class CollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
         var cell = UICollectionViewCell()
         
         if let vidcell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as? CollectionViewCell {
-            
             vidcell.configure(with: labelList[indexPath.item], imageList[indexPath.item])
             cell = vidcell
-            
-            }
+        }
         return cell
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
         if let path = Bundle.main.path(forResource: videoList[indexPath.item], ofType: "mov") {
             let video = AVPlayer(url: URL(fileURLWithPath: path))
             let videoPlayer = AVPlayerViewController()
             videoPlayer.player = video
 
-            present(videoPlayer, animated: true)
-            {
+            present(videoPlayer, animated: true) {
                 video.play()
             }
         }
     }
 }
-    
-
-
-
-
-
-
-
