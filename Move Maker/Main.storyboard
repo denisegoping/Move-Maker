@@ -33,8 +33,8 @@
                                 <color key="shadowColor" red="1" green="0.99157592910000003" blue="0.61651666549999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="shadowOffset" width="-4" height="-1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="A library of dance moves that beginners or experts can try. Upload your own videos and get inspired!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16C-Sq-rXf">
-                                <rect key="frame" x="74" y="406.5" width="266" height="83"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="A library of dance moves that beginners or experts can try. Learn the tricks and get inspired!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16C-Sq-rXf">
+                                <rect key="frame" x="74" y="417" width="266" height="62.5"/>
                                 <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
