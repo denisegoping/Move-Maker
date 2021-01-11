@@ -8,6 +8,18 @@
 import UIKit
 import AVKit
 
+struct MoveProperties: Codable {
+    let _id: String
+    let name: String
+    let thumbnail: String
+    let video: String
+}
+
+struct Move {
+    let moveProperties: MoveProperties
+    var image: UIImage
+}
+
 class CollectionViewController: UICollectionViewController {
     
     let imageList: [UIImage] = [#imageLiteral(resourceName: "sideTiltPic"), #imageLiteral(resourceName: "penchéKickPic"), #imageLiteral(resourceName: "slantJumpPic"), #imageLiteral(resourceName: "pirouettePic"), #imageLiteral(resourceName: "illusionPic"), #imageLiteral(resourceName: "handstandPic")]
