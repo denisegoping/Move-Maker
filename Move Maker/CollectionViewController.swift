@@ -22,7 +22,7 @@ struct Move {
 
 class CollectionViewController: UICollectionViewController {
 
-    let serverLink: String = "https://25b4b1b80673.ngrok.io"
+    let serverLink: String = "ngrok URL here"
     var moveList: [Move] = []
     
     // Gets image from URL, returns as a class of type Data
