@@ -15,12 +15,6 @@
 		522C5F2925A54673007FA9C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522C5F2825A54673007FA9C2 /* Assets.xcassets */; };
 		522C5F3B25A54EE8007FA9C2 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C5F3A25A54EE8007FA9C2 /* CollectionViewController.swift */; };
 		522C5F4225A55237007FA9C2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C5F4125A55237007FA9C2 /* CollectionViewCell.swift */; };
-		52E11C1425A68EB500A22395 /* pirouetteVid.mov in Resources */ = {isa = PBXBuildFile; fileRef = 52E11C0E25A68EB500A22395 /* pirouetteVid.mov */; };
-		52E11C1525A68EB500A22395 /* slantJumpVid.mov in Resources */ = {isa = PBXBuildFile; fileRef = 52E11C0F25A68EB500A22395 /* slantJumpVid.mov */; };
-		52E11C1625A68EB500A22395 /* illusionVid.mov in Resources */ = {isa = PBXBuildFile; fileRef = 52E11C1025A68EB500A22395 /* illusionVid.mov */; };
-		52E11C1725A68EB500A22395 /* handstandVid.mov in Resources */ = {isa = PBXBuildFile; fileRef = 52E11C1125A68EB500A22395 /* handstandVid.mov */; };
-		52E11C1825A68EB500A22395 /* penchéKickVid.mov in Resources */ = {isa = PBXBuildFile; fileRef = 52E11C1225A68EB500A22395 /* penchéKickVid.mov */; };
-		52E11C1925A68EB500A22395 /* sideTiltVid.mov in Resources */ = {isa = PBXBuildFile; fileRef = 52E11C1325A68EB500A22395 /* sideTiltVid.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,12 +28,6 @@
 		522C5F2D25A54673007FA9C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		522C5F3A25A54EE8007FA9C2 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		522C5F4125A55237007FA9C2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		52E11C0E25A68EB500A22395 /* pirouetteVid.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = pirouetteVid.mov; path = ../../Downloads/pirouetteVid.mov; sourceTree = "<group>"; };
-		52E11C0F25A68EB500A22395 /* slantJumpVid.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = slantJumpVid.mov; path = ../../Downloads/slantJumpVid.mov; sourceTree = "<group>"; };
-		52E11C1025A68EB500A22395 /* illusionVid.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = illusionVid.mov; path = ../../Downloads/illusionVid.mov; sourceTree = "<group>"; };
-		52E11C1125A68EB500A22395 /* handstandVid.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = handstandVid.mov; path = ../../Downloads/handstandVid.mov; sourceTree = "<group>"; };
-		52E11C1225A68EB500A22395 /* penchéKickVid.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = "penchéKickVid.mov"; path = "../../Downloads/penchéKickVid.mov"; sourceTree = "<group>"; };
-		52E11C1325A68EB500A22395 /* sideTiltVid.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = sideTiltVid.mov; path = ../../Downloads/sideTiltVid.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +44,6 @@
 		522C5F1325A54670007FA9C2 = {
 			isa = PBXGroup;
 			children = (
-				52E11C1125A68EB500A22395 /* handstandVid.mov */,
-				52E11C1025A68EB500A22395 /* illusionVid.mov */,
-				52E11C1225A68EB500A22395 /* penchéKickVid.mov */,
-				52E11C0E25A68EB500A22395 /* pirouetteVid.mov */,
-				52E11C1325A68EB500A22395 /* sideTiltVid.mov */,
-				52E11C0F25A68EB500A22395 /* slantJumpVid.mov */,
 				522C5F1E25A54670007FA9C2 /* Move Maker */,
 				522C5F1D25A54670007FA9C2 /* Products */,
 			);
@@ -152,12 +134,6 @@
 				52174DB625A8DF6E003FD596 /* Main.storyboard in Resources */,
 				522C5F2725A54670007FA9C2 /* Video.storyboard in Resources */,
 				522AC00E25AA3C4A00596775 /* LaunchScreen.storyboard in Resources */,
-				52E11C1425A68EB500A22395 /* pirouetteVid.mov in Resources */,
-				52E11C1525A68EB500A22395 /* slantJumpVid.mov in Resources */,
-				52E11C1625A68EB500A22395 /* illusionVid.mov in Resources */,
-				52E11C1725A68EB500A22395 /* handstandVid.mov in Resources */,
-				52E11C1825A68EB500A22395 /* penchéKickVid.mov in Resources */,
-				52E11C1925A68EB500A22395 /* sideTiltVid.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
