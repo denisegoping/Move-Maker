@@ -13,14 +13,14 @@
         <scene sceneID="XSF-Zy-9rT">
             <objects>
                 <collectionViewController restorationIdentifier="CollectionViewController" storyboardIdentifier="CollectionViewController" id="68B-Ig-XNj" customClass="CollectionViewController" customModule="Move_Maker" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="mkj-8J-ikE">
+                    <collectionView key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="mkj-8J-ikE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="50" minimumInteritemSpacing="10" id="IHQ-Zm-MRj">
                             <size key="itemSize" width="164" height="168"/>
-                            <size key="headerReferenceSize" width="0.0" height="15"/>
-                            <size key="footerReferenceSize" width="0.0" height="10"/>
+                            <size key="headerReferenceSize" width="414" height="50"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <imageView key="backgroundView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundColour" id="CYW-BZ-ULX">
@@ -28,8 +28,8 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="4V6-IZ-Cyj" userLabel="Cell" customClass="CollectionViewCell" customModule="Move_Maker" customModuleProvider="target">
-                                <rect key="frame" x="10" y="15" width="164" height="168"/>
+                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="4V6-IZ-Cyj" userLabel="Cell" customClass="CollectionViewCell" customModule="Move_Maker" customModuleProvider="target">
+                                <rect key="frame" x="10" y="50" width="164" height="168"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="uxg-EN-LtD">
                                     <rect key="frame" x="0.0" y="0.0" width="164" height="168"/>
@@ -79,13 +79,105 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bTA-1c-2NF">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="15"/>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CollectionReusableView" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="Header" id="bTA-1c-2NF">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                             <autoresizingMask key="autoresizingMask"/>
-                        </collectionReusableView>
-                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="0Z0-8X-2aC">
-                            <rect key="frame" x="0.0" y="183" width="414" height="10"/>
-                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e09-cg-tOt" userLabel="allGenres">
+                                    <rect key="frame" x="29" y="10" width="81" height="30"/>
+                                    <color key="backgroundColor" red="0.99571368706957641" green="0.9042848424040143" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="81" id="OS1-Q5-30a"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="14"/>
+                                    <state key="normal" title="All Genres">
+                                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                            <integer key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="allGenres:" destination="68B-Ig-XNj" eventType="touchUpInside" id="iHN-5v-U6J"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NsB-zJ-71y" userLabel="contemporaryGenre">
+                                    <rect key="frame" x="190" y="10.5" width="134" height="29"/>
+                                    <color key="backgroundColor" red="0.99571368709999997" green="0.90428484239999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="29" id="Vzb-ES-QG0"/>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="86" id="cjm-IF-Lah"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="13"/>
+                                    <state key="normal" title="Contemporary">
+                                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                            <integer key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="contemporaryGenre:" destination="68B-Ig-XNj" eventType="touchUpInside" id="ueG-o1-leA"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lrr-tF-vBu" userLabel="acroGenre">
+                                    <rect key="frame" x="332" y="10" width="53" height="30"/>
+                                    <color key="backgroundColor" red="0.99571368709999997" green="0.90428484239999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="WWN-3R-ccf"/>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="53" id="fq4-YC-n6c"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="14"/>
+                                    <state key="normal" title="Acro">
+                                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                            <integer key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="acroGenre:" destination="68B-Ig-XNj" eventType="touchUpInside" id="oyy-tB-wRk"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XtW-gV-NaW" userLabel="jazzGenre">
+                                    <rect key="frame" x="130" y="10" width="43" height="30"/>
+                                    <color key="backgroundColor" red="0.99571368709999997" green="0.90428484239999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="43" id="84J-Yg-jCG"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="14"/>
+                                    <state key="normal" title="Jazz">
+                                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                            <integer key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="jazzGenre:" destination="68B-Ig-XNj" eventType="touchUpInside" id="X1a-ja-ADU"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="NsB-zJ-71y" firstAttribute="centerY" secondItem="bTA-1c-2NF" secondAttribute="centerY" id="1vg-Rf-BG1"/>
+                                <constraint firstItem="NsB-zJ-71y" firstAttribute="leading" relation="lessThanOrEqual" secondItem="XtW-gV-NaW" secondAttribute="trailing" constant="17" id="65d-Y8-kq8"/>
+                                <constraint firstItem="XtW-gV-NaW" firstAttribute="baseline" secondItem="Lrr-tF-vBu" secondAttribute="baseline" id="Pad-Cn-IhN"/>
+                                <constraint firstItem="XtW-gV-NaW" firstAttribute="baseline" secondItem="e09-cg-tOt" secondAttribute="baseline" id="SRx-kQ-Emo"/>
+                                <constraint firstItem="XtW-gV-NaW" firstAttribute="centerY" secondItem="bTA-1c-2NF" secondAttribute="centerY" id="U94-0F-ecp"/>
+                                <constraint firstItem="e09-cg-tOt" firstAttribute="leading" relation="lessThanOrEqual" secondItem="bTA-1c-2NF" secondAttribute="leadingMargin" constant="21" id="Ywe-b6-ras"/>
+                                <constraint firstItem="XtW-gV-NaW" firstAttribute="leading" secondItem="e09-cg-tOt" secondAttribute="trailing" constant="20" id="Yxc-QU-AGG"/>
+                                <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="Lrr-tF-vBu" secondAttribute="trailing" constant="21" id="eGW-pg-cdb"/>
+                                <constraint firstItem="Lrr-tF-vBu" firstAttribute="leading" secondItem="NsB-zJ-71y" secondAttribute="trailing" constant="8" symbolic="YES" id="gm3-NJ-2Ql"/>
+                                <constraint firstItem="Lrr-tF-vBu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="NsB-zJ-71y" secondAttribute="trailing" constant="8" symbolic="YES" id="kJw-LH-iV4"/>
+                                <constraint firstItem="Lrr-tF-vBu" firstAttribute="centerY" secondItem="bTA-1c-2NF" secondAttribute="centerY" id="kTb-qg-LNq"/>
+                                <constraint firstItem="e09-cg-tOt" firstAttribute="centerY" secondItem="bTA-1c-2NF" secondAttribute="centerY" id="njv-q3-wQ4"/>
+                                <constraint firstItem="XtW-gV-NaW" firstAttribute="firstBaseline" secondItem="NsB-zJ-71y" secondAttribute="firstBaseline" id="oII-zV-ZAN"/>
+                            </constraints>
                         </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="68B-Ig-XNj" id="E2E-Eo-HmZ"/>
