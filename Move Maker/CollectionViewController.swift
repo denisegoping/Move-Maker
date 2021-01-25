@@ -13,6 +13,7 @@ struct MoveProperties: Codable {
     let name: String
     let thumbnail: String
     let video: String
+    let genre: String
 }
 
 struct Move {
@@ -21,7 +22,7 @@ struct Move {
 }
 
 class CollectionViewController: UICollectionViewController {
-
+    
     let serverLink: String = "ngrok URL here"
     var moveList: [Move] = []
     
@@ -43,8 +44,9 @@ class CollectionViewController: UICollectionViewController {
     
     // Gets moveProperties from server and adds them to moveList
     // For each move received, gets associated image
-    func getMoves() {
-        if let url = URL(string: serverLink) {
+    func getMoves(_ link: String) {
+        moveList.removeAll()
+        if let url = URL(string: link) {
            URLSession.shared.dataTask(with: url) { data, response, error in
               if let data = data {
                   do {
@@ -62,10 +64,26 @@ class CollectionViewController: UICollectionViewController {
            }.resume()
         }
     }
+ 
+    @IBAction func allGenres(_ sender: Any) {
+        getMoves(serverLink)
+    }
+    
+    @IBAction func jazzGenre(_ sender: Any) {
+        getMoves(serverLink + "/Jazz")
+    }
+    
+    @IBAction func contemporaryGenre(_ sender: Any) {
+        getMoves(serverLink + "/Contemporary")
+    }
+    
+    @IBAction func acroGenre(_ sender: Any) {
+        getMoves(serverLink + "/Acro")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getMoves()
+        getMoves(serverLink)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -74,6 +92,11 @@ class CollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return moveList.count
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "Header", for: indexPath)
+        return headerView
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

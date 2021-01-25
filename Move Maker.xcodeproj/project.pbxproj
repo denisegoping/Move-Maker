@@ -8,18 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		52174DB625A8DF6E003FD596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52174DB525A8DF6E003FD596 /* Main.storyboard */; };
-		522AC00E25AA3C4A00596775 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522AC00D25AA3C4A00596775 /* LaunchScreen.storyboard */; };
 		522C5F2025A54670007FA9C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C5F1F25A54670007FA9C2 /* AppDelegate.swift */; };
 		522C5F2225A54670007FA9C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C5F2125A54670007FA9C2 /* SceneDelegate.swift */; };
 		522C5F2725A54670007FA9C2 /* Video.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522C5F2525A54670007FA9C2 /* Video.storyboard */; };
 		522C5F2925A54673007FA9C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522C5F2825A54673007FA9C2 /* Assets.xcassets */; };
 		522C5F3B25A54EE8007FA9C2 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C5F3A25A54EE8007FA9C2 /* CollectionViewController.swift */; };
 		522C5F4225A55237007FA9C2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C5F4125A55237007FA9C2 /* CollectionViewCell.swift */; };
+		5243CA2025BE1D2800436F8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5243CA1E25BE1D2800436F8C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		52174DB525A8DF6E003FD596 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		522AC00D25AA3C4A00596775 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		522C5F1C25A54670007FA9C2 /* Move Maker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Move Maker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		522C5F1F25A54670007FA9C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		522C5F2125A54670007FA9C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +27,7 @@
 		522C5F2D25A54673007FA9C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		522C5F3A25A54EE8007FA9C2 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		522C5F4125A55237007FA9C2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		5243CA1F25BE1D2800436F8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../Dance Tutorials/Dance Tutorials/Base.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 				522C5F2125A54670007FA9C2 /* SceneDelegate.swift */,
 				522C5F2525A54670007FA9C2 /* Video.storyboard */,
 				52174DB525A8DF6E003FD596 /* Main.storyboard */,
-				522AC00D25AA3C4A00596775 /* LaunchScreen.storyboard */,
+				5243CA1E25BE1D2800436F8C /* LaunchScreen.storyboard */,
 				522C5F2825A54673007FA9C2 /* Assets.xcassets */,
 				522C5F2D25A54673007FA9C2 /* Info.plist */,
 				522C5F3A25A54EE8007FA9C2 /* CollectionViewController.swift */,
@@ -133,7 +133,7 @@
 				522C5F2925A54673007FA9C2 /* Assets.xcassets in Resources */,
 				52174DB625A8DF6E003FD596 /* Main.storyboard in Resources */,
 				522C5F2725A54670007FA9C2 /* Video.storyboard in Resources */,
-				522AC00E25AA3C4A00596775 /* LaunchScreen.storyboard in Resources */,
+				5243CA2025BE1D2800436F8C /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +160,14 @@
 				522C5F2625A54670007FA9C2 /* Base */,
 			);
 			name = Video.storyboard;
+			sourceTree = "<group>";
+		};
+		5243CA1E25BE1D2800436F8C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5243CA1F25BE1D2800436F8C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
